@@ -4,6 +4,7 @@ numpy
 scikit-learn
 tensorboard
 matplotlib
+flask
 streamlit
 scikeras
 nltk

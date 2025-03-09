@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Word Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Next Word Prediction</h1>
+        <p>Enter some text and get predictions for the next word using LSTM neural network.</p>
+        
+        <div class="input-group">
+            <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+        </div>
+        
+        <button id="predictBtn">Predict Next Word</button>
+        
+        <div id="result">
+            <h3>Input Text:</h3>
+            <p id="inputTextDisplay"></p>
+            
+            <h3>Predicted Next Words:</h3>
+            <div id="predictions"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
